@@ -37,11 +37,11 @@ public class EmployeServiceImplTests {
 	@Test
 	public void testAddOrUpdateEmploye()  {
 		
-		Employe e = new Employe("jamie", "Kent", "jamie.ken@gmail.com","kent",true, Role.INGENIEUR);
+		Employe e = new Employe("maher", "gharbi", "maher.gharbi1@esprit.tn","info",true, Role.INGENIEUR);
 		
 		employeService.addOrUpdateEmploye(e); 
 		
-	    assertEquals(e.getNom(), "jamie");
+	    assertEquals(e.getNom(), "maher");
 	      		       
 	}
 	
@@ -50,7 +50,7 @@ public class EmployeServiceImplTests {
 	
 		
 		
-		Employe e = new Employe("chaima", "mezri", "chaima@gmail.com","ket",true, Role.INGENIEUR);
+		Employe e = new Employe("mohamed", "gharbi", "mohamed@gmail.com","telecom",true, Role.INGENIEUR);
 		
 		employeService.addOrUpdateEmploye(e); 
 		
@@ -79,7 +79,7 @@ public class EmployeServiceImplTests {
 	public void testDeleteEmployeById() {
 		
 		
-		Employe e = new Employe("rakia", "zribi", "ad@jd.com","ken",false, Role.INGENIEUR);
+		Employe e = new Employe("maher", "gharbi", "maher.gharbi1","info",false, Role.INGENIEUR);
 		
 		employeService.addOrUpdateEmploye(e); 
 		
